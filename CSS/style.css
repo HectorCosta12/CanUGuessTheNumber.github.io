@@ -27,7 +27,7 @@ header {
 
 header a h1{
     color: white;
-    font-size: 2.8rem;
+    font-size: 1.3rem;
     font-weight: 150;
 }
 
@@ -47,8 +47,8 @@ header a h1{
     background: var(--light-black);
     display: flex;
     flex-direction: column;
-    width: 40%;
-    padding: 2rem;
+    width: 35%;
+    padding: 1rem;
     margin-top: 5%;
     border-radius: 0.5rem;
     box-shadow: 1px 2px 4px 2px rgb(0, 0, 0); 
@@ -56,7 +56,7 @@ header a h1{
 
 .container form label {
     color: white; /*var(--dark-gray)*/
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -84,7 +84,7 @@ header a h1{
     outline: 0;
     padding: 0.8rem;
     border-radius: 0.2rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
     background: var(--grafite);
     color: white; /*var(--dark-gray)*/
@@ -101,7 +101,7 @@ header a h1{
 .container .result-box {
     margin-top: 5%;
     background: var(--dark-gray);
-    width: 48%;
+    width: 38%;
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 1px 1px 5px 0px black;
@@ -111,12 +111,12 @@ header a h1{
 
 .container .result-box h2 {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 5% 0%;
 }
 
 .container .result-box span {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     font-weight: 300;
 }
 
@@ -144,7 +144,7 @@ header a h1{
 
 h1 {
     font-family: "Press Start 2P", system-ui;;
-    font-size: 48px;
+    
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -163,7 +163,7 @@ footer {
 footer p {
     color: var(--grafite);
     font-size: 0.8rem;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 body {
