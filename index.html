@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome, opera">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can You...?</title>
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/c791c23c83146ecdc4a396db6fa3e966.jpg">
+
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <a href="#"><h1>Guess The Number</h1></a> <!--Fica com efeito de link-->
+    </header>
+
+    <!--Conteúdo do Jogo-->
+    <main class="container">
+        <!--Formulário com 3 tags-->
+        <form id = "form">
+            <label for="kick">Type a number (0 to 100):</label> <!--Kick é o id-->
+            <input type="numer" id="kick" max="100" placeholder="-">
+            <button type="submit">Guess!</button>
+        </form>
+
+        <section class="result-box" id="result">
+            <h2 id="status">Guess a drawn number!</h2>
+            <span id="attempt">Attempts: 0</span> <!--conta as tentativas-->
+        </section>
+
+        <button id="btnRestart" onclick="restart()">Play again!</button>
+    </main>
+
+    <!--Rodapé-->
+    <footer>
+        <p>Guess Number, 2024 &copy; <br> <br>
+        Hector Costa</p> <!--Com o símbolo Copy Rigth-->
+    </footer>
+</body>
+</html>
