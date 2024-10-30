@@ -1,0 +1,175 @@
+/**Global**/
+/*Criar variáveis*/
+:root {
+    --dark-gray: #2B2B2B;/* --white */
+    --grafite: #3E3E3E; /* --blue */
+    --light-black: #1A1A1A; /* --blue-light */
+}
+
+/* (*) aplica em todo o website (configurações iniciais do site) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", system-ui;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    /*          X | Y |blur| blur espaçamento */
+    box-shadow: 0px 2px 8px 6px black;
+    /*como chamar uma variavel [var(nomeDaVariavel)]*/
+    background-color: var(--dark-gray);
+}
+
+header a h1{
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 150;
+}
+
+/*container do site*/
+.container {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(to right, #151515ee, #000000dd, #151515ee);
+}
+
+/*Form do site*/
+.container form {
+    background: var(--light-black);
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2rem;
+    margin-top: 5%;
+    border-radius: 0.5rem;
+    box-shadow: 1px 2px 4px 2px rgb(0, 0, 0); 
+}
+
+.container form label {
+    color: white; /*var(--dark-gray)*/
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.container form input {
+    border: 0;
+    outline: 0;
+    margin: 5% 0px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border-radius: 0.2rem;
+    box-shadow: 2px 2px 2px 1px black;
+}
+
+/* personalização do input */
+.container form input:focus {
+    box-shadow: 1px 2px 4px 2px rgb(0, 0, 0);
+}
+
+
+.container form button {
+    cursor: pointer;
+    margin-top: 3%;
+    border: 0;
+    outline: 0;
+    padding: 0.8rem;
+    border-radius: 0.2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background: var(--grafite);
+    color: white; /*var(--dark-gray)*/
+    transition: 0.3s ease-in-out;
+}
+
+/*transição de cores do botão */
+.container form button:hover{
+    color: black; /*var(--grafite)*/
+    background: white; /*var(--dark-gray)*/
+}
+
+/* box para mostrar o resultado */
+.container .result-box {
+    margin-top: 5%;
+    background: var(--dark-gray);
+    width: 48%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 5px 0px black;
+    color: white; /*var(--grafite)*/
+    box-shadow: 1px 2px 4px 2px rgb(0, 0, 0);
+}
+
+.container .result-box h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 5% 0%;
+}
+
+.container .result-box span {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+/* Botão para jogar de novo */
+.container #btnRestart {
+    cursor: pointer;
+    margin-top: 3%;
+    border: 0;
+    outline: 0;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    background: white; /*var(--dark-gray)*/
+    color: var(--light-black);
+    transition: 0.3s ease-in-out;
+    display: none;
+    box-shadow: 1px 2px 4px 2px rgb(0, 0, 0);
+}
+
+.container #btnRestart:hover{
+    background: var(--grafite);
+    color: white; /*var(--dark-gray)*/
+}
+
+h1 {
+    font-family: "Press Start 2P", system-ui;;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #525252;
+    text-align: center;
+}
+
+footer {
+    padding: 1.2rem;
+    text-align: center;
+    box-shadow: inset 0px 0px 4px 0px black;
+    background: black;
+}
+
+footer p {
+    color: var(--grafite);
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+body {
+    background-image: url('/img/stars.gif'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Para cobrir todo o fundo */
+    background-position: center; /* Para centralizar a imagem */
+    background-repeat: no-repeat; /* Para evitar que a imagem se repita */
+    
+}
